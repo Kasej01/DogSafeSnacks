@@ -7,7 +7,6 @@ import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom';
 import Avatar from '@mui/material/Avatar';
 
-
 const Navbar = () => {
     return (
         <Box sx={{ flexGrow: 1 }}>
@@ -16,7 +15,7 @@ const Navbar = () => {
                     <Box sx={{ display: 'flex', alignItems: 'center', flexGrow: 1 }}>
                         <Avatar 
                             alt="Logo" 
-                            src="../public/logo.png" // Replace with the path to your image
+                            src="/logo.png" // Use absolute path from the public directory
                             sx={{ width: 30, height: 30, marginRight: 2 }}
                         />
                         <Typography fontWeight="560" variant="h5" component="div" sx={{ flexGrow: 1 }}>
