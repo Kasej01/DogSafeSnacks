@@ -18,7 +18,7 @@ const Home = () => {
         <Container maxWidth="md">
             <Box sx={{ my: 4, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                 <Typography variant="h4" component="h1" gutterBottom>
-                    Dog Food Checker
+                    Check a food's safety
                 </Typography>
                 <SearchBar onSearch={handleSearch} />
                 <FoodList foods={foods} />

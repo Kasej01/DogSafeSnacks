@@ -5,17 +5,28 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom';
+import Avatar from '@mui/material/Avatar';
 
 const Navbar = () => {
     return (
         <Box sx={{ flexGrow: 1 }}>
             <AppBar position="static" className="navbar">
                 <Toolbar className="navbar">
-                    <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                        Dog Food Checker
-                    </Typography>
+                    <Box sx={{ display: 'flex', alignItems: 'center', flexGrow: 1 }}>
+                        <Avatar 
+                            alt="Logo" 
+                            src="/public/logo.png" // Replace with the path to your image
+                            sx={{ width: 30, height: 30, marginRight: 2 }}
+                        />
+                        <Typography fontWeight="560" variant="h5" component="div" sx={{ flexGrow: 1 }}>
+                            DogEats
+                        </Typography>
+                    </Box>
                     <Button color="inherit" component={Link} to="/">
                         Home
+                    </Button>
+                    <Button color="inherit" component={Link} to="/about">
+                        Mission
                     </Button>
                     <Button color="inherit" component={Link} to="/donate">
                         Donate

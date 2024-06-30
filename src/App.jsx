@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Donate from './pages/Donate';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import About from './pages/About';
 import CssBaseline from '@mui/material/CssBaseline';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import './index.css';
@@ -31,6 +32,7 @@ const App = () => {
                 <div className="container">
                     <Routes>
                         <Route path="/" element={<Home />} />
+                        <Route path="/about" element={<About />} />
                         <Route path="/donate" element={<Donate />} />
                     </Routes>
                 </div>

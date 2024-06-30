@@ -49,6 +49,33 @@ body, html {
   box-sizing: border-box;
 }
 
+.button {
+  background-color: #F5A623;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+  background-color: #f38c20;
+  transform: translateY(-2px);
+}
+
+.button:active {
+  background-color: #d0781d;
+  transform: translateY(0);
+}
+
+.center-align{
+  text-align: center;
+}
+
 @media (max-width: 1200px) {
   .food-item {
       flex: 1 1 calc(50% - 20px);
@@ -63,7 +90,8 @@ body, html {
 
 @media (max-width: 600px) {
   .navbar {
-      flex-direction: column;
+    padding-top: .25rem;;
+    flex-direction: column;
   }
 
   .navbar a {
