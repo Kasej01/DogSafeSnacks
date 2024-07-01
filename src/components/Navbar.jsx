@@ -6,8 +6,11 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom';
 import Avatar from '@mui/material/Avatar';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 const Navbar = () => {
+    const isSmallScreen = useMediaQuery('(max-width:600px)');
+
     return (
         <Box sx={{ flexGrow: 1 }}>
             <AppBar position="static" className="navbar">
@@ -15,10 +18,10 @@ const Navbar = () => {
                     <Box sx={{ display: 'flex', alignItems: 'center', flexGrow: 1 }}>
                         <Avatar 
                             alt="Logo" 
-                            src="/logo.png" // Use absolute path from the public directory
-                            sx={{ width: 30, height: 30, marginRight: 2 }}
+                            src="/logo.png"
+                            sx={{ width: isSmallScreen ? 40 : 50, height: isSmallScreen ? 40 : 50, marginRight: 2, borderRadius: 0 }}
                         />
-                        <Typography fontWeight="560" variant="h5" component="div" sx={{ flexGrow: 1 }}>
+                        <Typography fontWeight="560" variant={isSmallScreen ? 'h6' : 'h5'} component="div" sx={{ flexGrow: 1 }}>
                             DogEats
                         </Typography>
                     </Box>

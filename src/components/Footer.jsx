@@ -3,17 +3,20 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 const Footer = () => {
+    const isSmallScreen = useMediaQuery('(max-width:600px)');
+
     return (
         <Box className="footer" component="footer">
-            <Typography variant="h6" align="center" gutterBottom>
+            <Typography variant={isSmallScreen ? 'h6' : 'h5'} align="center" gutterBottom>
                 Dog Food Checker
             </Typography>
             <Typography variant="subtitle1" align="center" color="text.secondary" component="p">
                 Helping you keep your furry friends safe and healthy!
             </Typography>
-            <Box sx={{ display: 'flex', justifyContent: 'center', gap: '10px', mt: 2 }}>
+            <Box sx={{ display: 'flex', justifyContent: 'center', gap: isSmallScreen ? '5px' : '10px', mt: 2 }}>
                 <Button variant="contained" color="primary" component={Link} to="/">
                     Home
                 </Button>
