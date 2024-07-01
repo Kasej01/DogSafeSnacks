@@ -20,7 +20,11 @@ const Footer = () => {
                 <Button variant="contained" color="primary" component={Link} to="/">
                     Home
                 </Button>
-                <Button variant="contained" color="primary" component={Link} to="/donate">
+                <Button
+                    variant="contained"
+                    color="primary"
+                    onClick={() => window.open('https://buymeacoffee.com/kasejohnson01', '_blank')}
+                >
                     Buy me a coffee
                 </Button>
                 <Button variant="contained" color="primary" onClick={() => window.location = 'mailto:kasejohnson01@gmail.com'}>
