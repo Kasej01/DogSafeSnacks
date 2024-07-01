@@ -24,7 +24,11 @@ const Home = () => {
                     display: 'flex',
                     flexDirection: 'column',
                     alignItems: 'center',
-                    px: isSmallScreen ? 2 : 0
+                    px: isSmallScreen ? 2 : 0,
+                    backgroundColor: 'white',
+                    borderRadius: 2,
+                    boxShadow: 3,
+                    padding: 3,
                 }}
             >
                 <Typography variant={isSmallScreen ? 'h5' : 'h4'} component="h1" gutterBottom>

@@ -13,17 +13,19 @@ const Navbar = () => {
 
     return (
         <Box sx={{ flexGrow: 1 }}>
-            <AppBar position="static" className="navbar">
+            <AppBar position="static" className="navbar" color="primary">
                 <Toolbar className="navbar">
-                    <Box sx={{ display: 'flex', alignItems: 'center', flexGrow: 1 }}>
-                        <Avatar 
-                            alt="Logo" 
-                            src="/logo.png"
-                            sx={{ width: isSmallScreen ? 40 : 50, height: isSmallScreen ? 40 : 50, marginRight: 2, borderRadius: 0 }}
-                        />
-                        <Typography fontWeight="560" variant={isSmallScreen ? 'h6' : 'h5'} component="div" sx={{ flexGrow: 1 }}>
-                            DogEats
-                        </Typography>
+                    <Box sx={{ flexGrow: 1, display: 'flex', alignItems: 'center' }}>
+                        <Link to="/" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none', color: 'inherit' }}>
+                            <Avatar 
+                                alt="Logo" 
+                                src="/logo.png"
+                                sx={{ width: isSmallScreen ? 40 : 50, height: isSmallScreen ? 40 : 50, marginRight: 2, borderRadius: 0 }}
+                            />
+                            <Typography fontWeight="560" variant={isSmallScreen ? 'h6' : 'h5'} component="div">
+                                DogEats
+                            </Typography>
+                        </Link>
                     </Box>
                     <Button color="inherit" component={Link} to="/">
                         Home

@@ -11,7 +11,7 @@ const Footer = () => {
     return (
         <Box className="footer" component="footer">
             <Typography variant={isSmallScreen ? 'h6' : 'h5'} align="center" gutterBottom>
-                Dog Food Checker
+                DogEats
             </Typography>
             <Typography variant="subtitle1" align="center" color="text.secondary" component="p">
                 Helping you keep your furry friends safe and healthy!

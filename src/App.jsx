@@ -14,14 +14,21 @@ const theme = createTheme({
         primary: {
             main: '#4A90E2',
         },
-        navbar: {
-            main: '#4A90E2',  // Custom color for the navbar
+        secondary: {
+            main: '#E91E63',
         },
-        footer: {
-            main: '#4A90E2',  // Custom color for the footer
+        background: {
+            default: '#f5f5f5',
+        },
+        text: {
+            primary: '#333',
         },
     },
+    typography: {
+        fontFamily: 'Poppins, sans-serif',
+    },
 });
+
 
 const App = () => {
     return (

@@ -2,6 +2,7 @@ import React from 'react';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
 import useMediaQuery from '@mui/material/useMediaQuery';
 
 const Donate = () => {
@@ -16,9 +17,14 @@ const Donate = () => {
                 <Typography variant="body1" gutterBottom>
                     Your donations help us keep this service free and continuously improve this app and the information on it.
                 </Typography>
-                <button className="button" onClick={() => window.open('https://buymeacoffee.com/kasejohnson01', '_blank')}>
+                <Button
+                    variant="contained"
+                    color="primary"
+                    onClick={() => window.open('https://buymeacoffee.com/kasejohnson01', '_blank')}
+                    sx={{ mt: 2 }}
+                >
                     Buy me a coffee
-                </button>
+                </Button>
             </Box>
         </Container>
     );
