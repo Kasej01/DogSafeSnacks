@@ -485,7 +485,6 @@ const ingredientData = [
     { name: 'Alfalfa', isSafe: true },
     { name: 'Spinach Powder', isSafe: true },
     { name: 'Spirulina', isSafe: true },
-    { name: 'Carrageenan', isSafe: true },
     { name: 'Agar-Agar', isSafe: true },
     { name: 'Pectin', isSafe: true },
     { name: 'Guar Gum', isSafe: true },
