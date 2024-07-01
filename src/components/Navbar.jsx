@@ -23,7 +23,7 @@ const Navbar = () => {
                                 sx={{ width: isSmallScreen ? 40 : 50, height: isSmallScreen ? 40 : 50, marginRight: 2, borderRadius: 0 }}
                             />
                             <Typography fontWeight="560" variant={isSmallScreen ? 'h6' : 'h5'} component="div">
-                                DogEats
+                            DogSafeSnacks
                             </Typography>
                         </Link>
                     </Box>
